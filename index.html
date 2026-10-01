@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIRGUARD v2.0 - Core Dashboard</title>
+    <style>
+        :root {
+            --bg-color: #0B0F19;
+            --panel-color: #161B26;
+            --accent-color: #00E5FF;
+            --text-color: #E2E8F0;
+            --alert-color: #FF3B30;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--panel-color);
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #242C3D;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 24px;
+            color: var(--accent-color);
+            letter-spacing: 1px;
+        }
+
+        .badge {
+            background-color: #1F293D;
+            border: 1px solid var(--accent-color);
+            color: var(--accent-color);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 30px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 25px;
+        }
+
+        .sidebar {
+            background-color: var(--panel-color);
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #242C3D;
+            height: fit-content;
+        }
+
+        .main-panel {
+            background-color: var(--panel-color);
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #242C3D;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h2 {
+            margin-top: 0;
+            font-size: 18px;
+            border-bottom: 1px solid #242C3D;
+            padding-bottom: 10px;
+        }
+
+        .info-card {
+            background: #1F293D;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .engine-frame {
+            width: 100%;
+            height: 600px;
+            border: none;
+            border-radius: 8px;
+            background-color: #1F293D;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #718096;
+            text-align: center;
+            border: 2px dashed #242C3D;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>AIRGUARD <span style="color:white; font-size:14px;">v2.0</span></h1>
+        <div class="badge">PROTOTYPE EDGE NODE ONLINE</div>
+    </header>
+
+    <div class="container">
+        <!-- Sidebar Panel: System Specifications -->
+        <div class="sidebar">
+            <h2>System Architecture</h2>
+            <div class="info-card">
+                <strong>Deployment Node:</strong> NHCE Foot-Over Bridge<br>
+                <strong>Data Intake Ingress:</strong> Batch Mobile Video (MP4)<br>
+                <strong>Primary Lens Target:</strong> Outer Ring Road Traffic
+            </div>
+            
+            <h2>Core Infrastructure</h2>
+            <div class="info-card">
+                <strong>AI Compute:</strong> YOLOv8 Object Tensor Extraction<br>
+                <strong>Sensor Layer:</strong> Software-Defined Opacity Evaluator<br>
+                <strong>Cost Overhead:</strong> ₹0.00 (Pure Cloud Free-Tier)
+            </div>
+            <p style="font-size: 12px; color: #718096; text-align: center; margin-top: 30px;">
+                Airguard Engine Processing Terminal &bull; B.Tech CSE Project
+            </p>
+        </div>
+
+        <!-- Main Panel: The Processing Matrix -->
+        <div class="main-panel">
+            <h2>Live Processing Engine</h2>
+            <!-- Place holder for processing box -->
+            <div class="engine-frame">
+                <div style="padding: 40px;">
+                    <p style="font-size: 24px; color: var(--accent-color); margin-bottom: 10px;">☁️ Backend Cloud Link Waiting</p>
+                    <p style="font-size: 14px; max-width: 400px; margin: 0 auto;">Your frontend framework is ready. Once you run your Google Colab notebook, we will embed the live upload tool right inside this block.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
