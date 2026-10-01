@@ -91,16 +91,10 @@
 
         .engine-frame {
             width: 100%;
-            height: 600px;
+            height: 700px;
             border: none;
             border-radius: 8px;
-            background-color: #1F293D;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #718096;
-            text-align: center;
-            border: 2px dashed #242C3D;
+            background-color: transparent;
         }
     </style>
 </head>
@@ -135,13 +129,8 @@
         <!-- Main Panel: The Processing Matrix -->
         <div class="main-panel">
             <h2>Live Processing Engine</h2>
-            <!-- Place holder for processing box -->
-            <div class="engine-frame">
-                <div style="padding: 40px;">
-                    <p style="font-size: 24px; color: var(--accent-color); margin-bottom: 10px;">☁️ Backend Cloud Link Waiting</p>
-                    <p style="font-size: 14px; max-width: 400px; margin: 0 auto;">Your frontend framework is ready. Once you run your Google Colab notebook, we will embed the live upload tool right inside this block.</p>
-                </div>
-            </div>
+            <!-- Embedded link connection layer -->
+            <iframe src="https://1911251657bf86f9d3.gradio.live/" class="engine-frame"></iframe>
         </div>
     </div>
 
